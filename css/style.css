@@ -1,0 +1,154 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+    background-color: white;
+}
+span{
+    color:black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover:not(.button,.item3){
+    text-decoration: underline;
+}
+
+.material-icons{
+    vertical-align: bottom;
+}
+input[type=text]{
+    box-sizing: border-box;
+    /* padding: 10px; */
+    font-size: 20px;
+}
+input[type="text"]{
+    outline:none;
+}
+.container{
+    width: 98vw;
+    height: 97vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 6fr 1fr 1fr ;
+}
+
+.item{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns:repeat(20,1fr);
+    
+}
+
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 6px;
+}
+
+.header-items{
+    padding: 8px;
+}
+.item4{
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 5px;
+    margin-left: 4px;
+    padding: 9px 23px;
+    font-weight: 500;    
+    text-decoration: none;
+
+}
+
+.item4:hover{
+    background-color: #4285f4;
+}
+
+
+.content{
+    grid-template-columns: 1fr;
+    grid-template-rows: 4;
+    align-items: center;
+    justify-items: center;
+}
+
+.c1{
+    align-self:flex-end;
+}
+
+.c2-inner{
+    border:2px solid rgba(0,0,0,0.2);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    padding: 10px 0;
+    background-color: white;
+}
+.c2-1{
+    grid-column: 2;
+}
+.c2-2{
+    grid-column: -18/-4;
+    border:none;
+}
+.c2-3{
+    grid-column: -3;
+}
+
+
+.c3 a{
+    /* border:1px solid black; */
+    padding: 8px 20px;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+}
+
+.c3 a:hover{
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.c4{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+.c4 a{
+    padding: 0 3px;
+    text-align:center;
+    font-weight: normal;
+}
+.footer2, .footer1{
+
+    display: flex;    
+    align-content:center;
+    box-sizing: border-box;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    background-color: #f8f9fa;
+    
+}
+.footer1 div{
+    color:black;
+}
+
+.footer2{
+    border-top: 1px solid rgba(0,0,0,0.2);
+    justify-content: space-between;
+    
+}
+
+.footer2 a{
+    padding: 15px;
+}
+
+@media only screen and (max-width: 1200px){
+.footer2{
+    justify-content: space-evenly;
+}
+}
+
+
